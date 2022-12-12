@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    background: coral;
+    /* font-weight: 700; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    background: paleturquoise;
+    max-width: 90%;
+    /* margin: 0 auto; */
+    padding: 2rem;
+    border-radius: 2%;
+    justify-content: center;
+    align-items: center;
+    /* height: 30rem; */
+}
+
+.creditsLeft {
+    font-size: 1.5rem;
+    margin-block-end: 2rem;
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.tile {
+    width: 8rem;
+    height: 12rem;
+    background-color: teal;
+    border: 2px dashed aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('../icons/cherry.png');
+    background-size: 5rem auto; */
+}
+
+.tileImg {
+    width: 5rem;
+    height: auto;
+}
+
+.buttonFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-block-start: 2rem;
+    align-items: center;
+}
+
+.play {
+    font-size: 2rem;
+    background: #303030;
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 5%;
+    cursor: pointer;
+    margin-inline-end: 0.3rem;
+}
+
+.restart {
+    font-size: 2rem;
+    background: #303030;
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.play:hover, .restart:hover {
+    color: #303030;
+    background: aliceblue;
+}
+
+.play:active, .restart:active {
+    background: coral;
+}
+
+.invalid {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 5%;
+    margin-inline-end: 0.3rem;
+    background: #303030;
+    color: red;
+    cursor: not-allowed;
+}
+
+.restart {
+
+}
+
+.fruitList {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
+    width: 50%;
+    margin-block-end: 1rem;
+}
+
+.fruitDiv {
+    background-color: aliceblue;
+    width: 5rem;
+    border-radius: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 1rem;
+    padding-block: 0.6rem;
+}
+
+.fruitPic {
+    width: 2rem;
+    height: 2rem;
+}
+
+#debug {
+    display: none;
+    background: aliceblue;
+    max-width: fit-content;
+    height: fit-content;
+    font-family: consolas;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#debug > span {
+    margin-inline: 0.2rem;
+}
+
+#showDebug {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: teal;
+    padding: 0.4rem;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5%;
+    margin-block: 0.3rem;
+}
+
+#showDebug:hover {
+    background-color: teal;
+    color: aliceblue;
+}
+
+#showDebug:active {
+    background-color: #303030;
+    color: aliceblue;
+}
+
+@media (max-width:548px) {
+    .tile {
+        width: 5.5rem;
+        height: 7rem;
+    }
+
+    .fruitList {
+        width: 40%;
+    }
+
+    .tileImg {
+        width: 4rem;
+        height: auto;
+    }
+
+    .row {
+        margin-inline: 0.3rem;
+    }
+}
