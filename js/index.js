@@ -62,10 +62,10 @@ function beep() {
 restartButton.onclick = function () {
     credits = 10;
     creDiv.innerText = credits; // populate the credits
-    debugShowing = false
-    console.log(debugShowing)
-    debugBox.style.display = 'none'
-    showDebug.innerText = 'SHOW DEBUG'
+    // debugShowing = false
+    // console.log(debugShowing)
+    // debugBox.style.display = 'none'
+    // showDebug.innerText = 'SHOW DEBUG'
     tiles[0].src = ''
     tiles[1].src = ''
     tiles[2].src = ''
